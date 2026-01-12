@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="This is form validation website">
+    <meta name="Author" content="Hafsa yousuf">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form validation</title>
+
+</head>
+
+<!-- <form>:	Starts a form
+action="./submit.html"	:Send data to this file
+name="myform":	Gives form a name for JavaScript
+method="get":	Sends data via URL
+onsubmit="return validateform()"	:Runs JS function before submitting
+ -->
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="./submit.html" name="myform" method="get" onsubmit="return  validateForm()">
+            <div class="formdesign" id="firstnamediv">
+                <label for="firstName">First Name (capital letter)</label>
+                <br>
+                <input type="text" name="firstName" value="" id="firstname">
+                <br>
+                <b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="lastnamediv">
+                <label for="lastName">Last Name (capital letter)</label>
+                <br>
+                <input type="text" name="lastName" value="" id="lastName">
+                <br>
+                <b><span class="formerror"></span></b>
+            </div>
+
+
+            <div class="formdesign" id="emaildiv">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" value="" id="email">
+                <br>
+                <b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="phonediv">
+                <label for="phone">Phone no</label>
+                <br>
+                <input type="phone" name="phone" value="" id="phone">
+                <br>
+                <b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="passdiv">
+                <label for="password">Password</label>
+                <br>
+                <input type="password" name="password" value="" id="password">
+                <br>
+                <b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="cpassdiv">
+                <label for="cpassword">Confirm Password</label>
+                <br>
+                <input type="password" name="cpassword" value="" id="cpassword">
+                <br>
+                <b><span class="formerror"></span></b>
+            </div>
+            <button type="submit"> REGISTER</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

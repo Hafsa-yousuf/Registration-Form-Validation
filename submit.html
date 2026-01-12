@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Submitted</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #fff7e6, #ffd6cc);
+      color: #d32f2f;
+      text-align: center;
+      overflow: hidden;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      max-width: 700px;
+      line-height: 1.4;
+      animation: popIn 0.8s ease forwards;
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .checkmark {
+      font-size: 5rem;
+      color: #2e7d32;
+      animation: bounce 1.2s ease infinite alternate;
+    }
+
+    @keyframes bounce {
+      to {
+        transform: translateY(-10px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .checkmark {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="checkmark">✅</div>
+    <h1>Your form has been successfully submitted!</h1>
+  </div>
+</body>
+
+</html>
